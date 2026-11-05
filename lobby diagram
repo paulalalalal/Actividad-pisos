@@ -1,2 +1,27 @@
 
 //www.plantuml.com/plantuml/png/JOz1JaCn34JtFiMm0XQLkc5J2LHM2AHAI9p0pNVRbCIf70T14QVY25oCdnOAkzWpyoQULsVpbXET-KQo88Yr9AnKdwFks3WZ9AxrrjtYihdSXw9FSI-Oqa70NHCpiO9t0YPOZUEUCKDKfmyYeeUsvg4O9ZTu5Aj5UIkZpiw1xUAoMpnw4YnYZL-VEeD93Uniu8JDaKw_DHtJZKKx8yZE3v2VrMHKJyuE2YNlH2lZ6bVJNdMEn7Y90qER1iQIjupXTCxV5qcB2ookDuwo-hV7CIxgDiRmTXWN_1epa-Y0dgFv-6evVGC0
+@startuml
+!theme cerulean
+skinparam classAttributeIconSize 0
+class Guerrero {
+  - fuerza : int
+}
+
+
+
+Jugador -> Personaje : atacar()
+
+
+
+title Misión: rescatar al herrero
+Guerrero -> Mision : aceptar()
+Mision --> Guerrero : recompensa = 50
+
+
+
+' la vida nunca baja de 0
+class Personaje
+note right of Personaje
+  vida entre 0 y vidaMaxima
+end note
+@enduml
